@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Classroom-Redefined-Backend-master.iml" filepath="$PROJECT_DIR$/.idea/Classroom-Redefined-Backend-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Classroom-Redefined-Backend-master/arparina.iml" filepath="$PROJECT_DIR$/Classroom-Redefined-Backend-master/arparina.iml" />
+    </modules>
+  </component>
+</project>
