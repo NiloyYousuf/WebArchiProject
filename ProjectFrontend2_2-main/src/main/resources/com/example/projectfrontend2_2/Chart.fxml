@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="677.0" prefWidth="940.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.projectfrontend2_2.AttendanceChart">
+    <children>
+        <BarChart fx:id="barChart" barGap="20.0" layoutX="109.0" layoutY="89.0" prefHeight="536.0" prefWidth="711.0"
+                  stylesheets="@chart.css">
+            <xAxis>
+                <CategoryAxis label="Courses" side="BOTTOM" fx:id="x"/>
+            </xAxis>
+            <yAxis>
+                <NumberAxis fx:id="oo" label="Attendance " side="LEFT"/>
+            </yAxis>
+        </BarChart>
+    </children>
+</AnchorPane>

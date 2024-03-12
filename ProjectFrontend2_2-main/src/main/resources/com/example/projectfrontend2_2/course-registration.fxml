@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="678.0"
+            prefWidth="881.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.projectfrontend2_2.courseReg.CourseRegistration">
+    <children>
+        <ComboBox fx:id="courses" layoutX="297.0" layoutY="208.0" onAction="#onCourseClick" prefHeight="55.0"
+                  prefWidth="516.0" promptText="Classrooms" stylesheets="@combobox.css"/>
+        <AnchorPane layoutX="297.0" layoutY="281.0" prefHeight="274.0" prefWidth="516.0"
+                    style="-fx-background-color: #b1e4fc; -fx-background-radius: 15;">
+            <children>
+                <Label fx:id="txt" layoutX="14.0" layoutY="14.0" prefHeight="28.0" prefWidth="118.0" textFill="#363636">
+                    <font>
+                        <Font name="Yu Gothic Bold" size="24.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="course" layoutX="14.0" layoutY="58.0">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="teacher" layoutX="14.0" layoutY="95.0">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="due_ass" layoutX="14.0" layoutY="131.0">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <Label layoutX="268.0" layoutY="32.0" prefHeight="100.0" prefWidth="375.0" text="Register Here">
+            <font>
+                <Font name="System Bold" size="55.0"/>
+            </font>
+        </Label>
+        <Button layoutX="717.0" layoutY="568.0" mnemonicParsing="false" onAction="#onRegisterClick" prefHeight="50.0"
+                prefWidth="95.0" stylesheets="@logoutbutton.css" text="Register" textFill="#faf6f6">
+            <font>
+                <Font name="Segoe UI Semibold" size="18.0"/>
+            </font>
+        </Button>
+        <Pane layoutY="2.0" prefHeight="678.0" prefWidth="240.0" style="-fx-background-color: blue;">
+            <children>
+                <Circle layoutX="118.0" layoutY="225.0" radius="100.0" stroke="WHITE" strokeType="INSIDE">
+                    <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color red="0.5370370149612427" green="0.6296296119689941" blue="1.0"/>
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="1.0" green="1.0" blue="1.0"/>
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </LinearGradient>
+                    </fill>
+                </Circle>
+                <ImageView fitHeight="180.0" fitWidth="222.0" layoutX="28.0" layoutY="135.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@man.png"/>
+                    </image>
+                </ImageView>
+                <Button fx:id="Logout" alignment="CENTER" layoutX="-1.0" layoutY="591.0" mnemonicParsing="false"
+                        onAction="#goToHome" prefHeight="62.0" prefWidth="240.0" stylesheets="@logoutbutton.css"
+                        text="Log Out" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="12.0"/>
+                    </font>
+                </Button>
+                <Circle fill="#ffffff00" layoutX="130.0" layoutY="225.0" radius="116.0" stroke="WHITE"
+                        strokeType="INSIDE"/>
+                <Circle fill="WHITE" layoutX="119.0" layoutY="-61.0" radius="100.0" stroke="WHITE" strokeType="INSIDE"/>
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-3.0" layoutY="58.0" prefHeight="17.0"
+                       prefWidth="247.0" text="Student Portal" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font name="Segoe UI Semibold" size="28.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="name" alignment="CENTER" contentDisplay="CENTER" layoutY="341.0" prefHeight="35.0"
+                       prefWidth="240.0" text="Samnun" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font name="Segoe UI Semibold" size="24.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="id" alignment="CENTER" contentDisplay="CENTER" layoutY="376.0" prefHeight="17.0"
+                       prefWidth="240.0" text="200041130" textAlignment="CENTER" textFill="#fce4e4">
+                    <font>
+                        <Font name="Calibri" size="14.0"/>
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <Circle fill="#1133ba54" layoutX="565.0" layoutY="-35.0" radius="225.0" stroke="WHITE" strokeType="INSIDE"/>
+        <Button fx:id="back" layoutX="791.0" layoutY="13.0" mnemonicParsing="false" onAction="#goToHome2"
+                prefHeight="39.0" prefWidth="76.0" style="-fx-background-radius: 20;" stylesheets="@logoutbutton.css"
+                text="Back" textFill="#fffbfb">
+            <font>
+                <Font name="System Bold" size="14.0"/>
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

@@ -1,0 +1,34 @@
+/* Style the combo box button */
+.combo-box .arrow {
+    -fx-background-color: #333333;
+    -fx-background-radius: 0;
+}
+
+/* Style the drop down list */
+.combo-box .list-view {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #b1e4fc;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+}
+
+/* Style the list items */
+.combo-box .list-cell {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #333333;
+}
+
+/* Style the selected list item */
+.combo-box .list-cell:filled:selected {
+    -fx-background-color: #b1e4fc;
+    -fx-text-fill: #333333;
+}
+
+/* Change the combo box background color */
+.combo-box {
+    -fx-background-color: #b1e4fc;
+}
+
+.combo-box-base {
+    -fx-background-color: #b1e4fc;
+}

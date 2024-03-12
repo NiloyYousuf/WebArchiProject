@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="678.0" prefWidth="881.0"
+            xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.projectfrontend2_2.Attendance">
+    <children>
+        <ImageView fitHeight="313.0" fitWidth="546.0" layoutX="334.0" layoutY="371.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@bg2.png"/>
+            </image>
+        </ImageView>
+        <DatePicker fx:id="datePicker" layoutX="377.0" layoutY="107.0" onAction="#datePickerClick" prefHeight="26.0"
+                    prefWidth="473.0"/>
+        <Label layoutX="377.0" layoutY="63.0" prefHeight="37.0" prefWidth="127.0" text="Enter Date:">
+            <font>
+                <Font name="Segoe UI" size="21.0"/>
+            </font>
+        </Label>
+        <ScrollPane fx:id="scroll" layoutX="377.0" layoutY="146.0" prefHeight="436.0" prefWidth="473.0"
+                    stylesheets="@scrollbar.css"/>
+        <Button fx:id="back" layoutX="788.0" layoutY="621.0" mnemonicParsing="false" onAction="#goBack"
+                prefHeight="26.0" prefWidth="68.0" stylesheets="@logoutbutton.css" text="Back" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="16.0"/>
+            </font>
+        </Button>
+        <Pane layoutY="-2.0" prefHeight="685.0" prefWidth="334.0" style="-fx-background-color: blue;">
+            <children>
+                <Circle fill="WHITE" layoutX="166.0" layoutY="302.0" radius="139.0" stroke="WHITE" strokeType="INSIDE"/>
+                <ImageView fitHeight="214.0" fitWidth="214.0" layoutX="60.0" layoutY="195.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@event.png"/>
+                    </image>
+                </ImageView>
+                <Circle fill="#ffffff00" layoutX="14.0" layoutY="435.0" radius="107.0" stroke="WHITE"
+                        strokeType="INSIDE"/>
+                <Circle fill="WHITE" layoutX="167.0" layoutY="-57.0" radius="100.0" stroke="WHITE" strokeType="INSIDE"/>
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutY="104.0" prefHeight="53.0" prefWidth="334.0"
+                       text="Attendance" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font name="Segoe UI Semibold" size="28.0"/>
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

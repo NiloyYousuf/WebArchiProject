@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="677.0"
+            prefWidth="881.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.projectfrontend2_2.Login.TeacherLogin">
+    <left>
+        <AnchorPane prefHeight="678.0" prefWidth="330.0" style="-fx-background-color: white;"
+                    BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="252.0" fitWidth="335.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@ui_login.jpg"/>
+                    </image>
+                </ImageView>
+                <Label layoutX="27.0" layoutY="418.0" prefHeight="38.0" prefWidth="281.0" text="Classroom: Redefined">
+                    <font>
+                        <Font name="System Bold" size="26.0"/>
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </left>
+    <center>
+        <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2D2FB0;"
+                    BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="182.0" layoutY="167.0" text="Let's Sign In!" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="36.0"/>
+                    </font>
+                </Label>
+                <TextField fx:id="teacherID" layoutX="266.0" layoutY="262.0" prefHeight="39.0" prefWidth="194.0"
+                           promptText="Teacher ID" stylesheets="@login.css"/>
+                <PasswordField fx:id="passWord" layoutX="266.0" layoutY="326.0" prefHeight="39.0" prefWidth="194.0"
+                               promptText="Password" stylesheets="@login.css"/>
+                <Label layoutX="122.0" layoutY="266.0" prefHeight="32.0" prefWidth="124.0" text="Teacher ID"
+                       textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="22.0"/>
+                    </font>
+                </Label>
+                <Label layoutX="122.0" layoutY="330.0" text="Password" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="22.0"/>
+                    </font>
+                </Label>
+                <Line endX="100.0" fill="WHITE" layoutX="291.0" layoutY="228.0" startX="-100.0" stroke="WHITE"/>
+                <Button layoutX="225.0" layoutY="413.0" mnemonicParsing="false" onAction="#goToTeacherScene"
+                        prefHeight="45.0" prefWidth="96.0" style="-fx-background-radius: 20;" stylesheets="@login.css"
+                        text="Login">
+                    <font>
+                        <Font name="System Bold" size="14.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="back" layoutX="451.0" layoutY="11.0" mnemonicParsing="false" onAction="#goToHome"
+                        prefHeight="39.0" prefWidth="76.0" style="-fx-background-radius: 20;" stylesheets="@login.css"
+                        text="Back">
+                    <font>
+                        <Font name="System Bold" size="14.0"/>
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

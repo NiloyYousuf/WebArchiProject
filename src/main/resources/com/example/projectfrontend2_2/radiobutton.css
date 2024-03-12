@@ -1,0 +1,16 @@
+.radio-button-custom {
+    -fx-background-color: transparent;
+    -fx-border-color: #2196F3;
+    -fx-border-width: 2px;
+    -fx-border-radius: 50%;
+    -fx-padding: 5px;
+    -fx-cursor: hand;
+}
+
+.radio-button-custom:selected {
+    -fx-background-color: #2196F3;
+}
+
+.radio-button-custom:hover {
+    -fx-border-color: #64B5F6;
+}

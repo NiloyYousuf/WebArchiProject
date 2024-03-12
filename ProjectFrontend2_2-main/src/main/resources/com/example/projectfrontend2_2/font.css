@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Roboto';
+
+}
+
+.text {
+    -fx-font-family: "Roboto";
+}

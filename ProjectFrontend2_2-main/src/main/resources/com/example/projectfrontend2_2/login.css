@@ -1,0 +1,20 @@
+.button {
+    -fx-background-color: white;
+}
+
+.button:hover {
+    -fx-background-color: #dcdaf7;
+}
+
+.button:pressed {
+    -fx-background-color: #9995cf;
+}
+
+.text-field, .password-field {
+    -fx-background-color: white;
+}
+
+.text-field:hover, .password-field:hover {
+    -fx-background-color: #dcdaf7;
+}
+

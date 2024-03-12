@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      onMouseClicked="#goToPost" prefHeight="139.0" prefWidth="614.0"
+      style="-fx-background-color: #d9e9ff; -fx-background-radius: 10; -fx-border-radius: 10;"
+      stylesheets="@tile_design.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.projectfrontend2_2.tilecontrol">
+    <children>
+        <Label fx:id="poster" layoutX="87.0" layoutY="7.0" prefHeight="34.0" prefWidth="287.0" text="Mr. X"
+               wrapText="true">
+            <font>
+                <Font name="Segoe UI Semibold" size="23.0"/>
+            </font>
+        </Label>
+        <Label fx:id="date" layoutX="87.0" layoutY="39.0" text="September 27, 2002">
+            <font>
+                <Font name="Calibri" size="12.0"/>
+            </font>
+        </Label>
+        <ImageView fitHeight="57.0" fitWidth="56.0" layoutX="14.0" layoutY="40.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@graduate.png"/>
+            </image>
+        </ImageView>
+        <VBox fx:id="vb" layoutX="87.0" layoutY="60.0" prefHeight="72.0" prefWidth="521.0"
+              style="-fx-background-color: #ebf3f5; -fx-background-radius: 10; -fx-border-radius: 10;">
+            <children>
+                <Text fx:id="post" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="507.13671875">
+                    <font>
+                        <Font name="Tahoma" size="14.0"/>
+                    </font>
+                </Text>
+            </children>
+            <padding>
+                <Insets bottom="5.0" left="7.0" right="5.0" top="7.0"/>
+            </padding>
+        </VBox>
+    </children>
+</Pane>

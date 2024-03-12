@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Portal</title>
+    <link rel="stylesheet" href="your_css_file.css">
+</head>
+<body style="-fx-background-color: #fcfcfc;">
+<div style="position: relative; min-height: 479px; min-width: 630px; height: 677px; width: 881px; background-color: #fcfcfc;">
+    <img src="bg2.png" alt="Background Image"
+         style="position: absolute; top: 332px; left: 240px; width: 643px; height: 345px;">
+
+    <button id="go"
+            style="position: absolute; left: 479px; top: 264px; height: 212px; width: 190px; font-family: 'System Bold'; font-size: 16px;">
+        Classroom
+    </button>
+
+    <div style="position: absolute; height: 678px; width: 240px; background-color: purple;">
+        <div style="position: absolute; top: 225px; left: 118px; width: 200px; height: 200px; border: 1px solid white; border-radius: 50%;">
+            <img src="man.png" alt="Teacher Image"
+                 style="width: 222px; height: 180px; position: absolute; top: 135px; left: 28px;">
+        </div>
+
+        <button id="Logout"
+                style="position: absolute; left: 0px; top: 591px; height: 62px; width: 240px; font-family: 'System Bold'; font-size: 12px; background-color: purple; color: white;">
+            Log Out
+        </button>
+
+        <label id="name"
+               style="position: absolute; top: 369px; width: 240px; height: 35px; font-family: 'Segoe UI Semibold'; font-size: 24px; color: white; text-align: center;">Niloy</label>
+
+        <label id="id"
+               style="position: absolute; top: 404px; width: 240px; height: 17px; font-family: 'Calibri'; font-size: 14px; color: #fce4e4; text-align: center;">200041130</label>
+
+        <label style="position: absolute; top: 63px; width: 240px; height: 17px; font-family: 'Segoe UI Semibold'; font-size: 28px; color: white; text-align: center;">Teacher
+            Portal</label>
+
+        <div style="position: absolute; top: -61px; left: 119px; width: 200px; height: 200px; border: 1px solid white; border-radius: 50%; background-color: white;"></div>
+    </div>
+
+    <label style="position: absolute; top: 39px; left: 263px; font-family: 'Segoe UI Semibold'; font-size: 56px;">Welcome
+        Back!</label>
+
+    <div style="position: absolute; top: -29px; left: 553px; width: 450px; height: 450px; border: 1px solid white; border-radius: 50%; background-color: rgba(185, 16, 227, 0.24);"></div>
+
+    <div style="position: absolute; top: 613px; left: 809px; width: 200px; height: 200px; border: 1px solid transparent; border-radius: 50%; background-color: rgba(118, 33, 255, 0.15);"></div>
+
+    <div style="position: absolute; top: 222px; left: -154px; width: 200px; height: 200px; border: 1px solid white; border-radius: 50%; background-color: rgba(33, 151, 255, 0);"></div>
+
+    <img src="classroom.png" alt="Classroom Image"
+         style="position: absolute; top: 282px; left: 499px; width: 200px; height: 150px;">
+</div>
+
+<script>
+    document.getElementById("go").addEventListener("click", function () {
+        // Implement logic for Classroom button click
+        console.log("Classroom button clicked");
+    });
+
+    document.getElementById("Logout").addEventListener("click", function () {
+        // Implement logic for Logout button click
+        console.log("Logout button clicked");
+    });
+</script>
+</body>
+</html>
