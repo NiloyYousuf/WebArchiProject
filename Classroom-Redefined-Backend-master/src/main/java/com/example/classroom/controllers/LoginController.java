@@ -1,7 +1,4 @@
 package com.example.classroom.controllers;
-
-
-
 import com.example.classroom.classroom.ClassroomRepository;
 import com.example.classroom.login.LoginDTO;
 import com.example.classroom.student.Student;
@@ -30,14 +27,8 @@ public class LoginController {
     @ResponseBody
     public StudentDTO student_login(@RequestBody LoginDTO ldto){
         StudentDTO sdto = new StudentDTO();
-
         sdto.setStudid((long) -1);
-
-
         Optional<Student> sopt = stud.findStudentByStudid(ldto.getCommon_id());
-
-
-
         if(sopt.isPresent()){
             Student s = sopt.get();;
 
@@ -54,24 +45,14 @@ public class LoginController {
     @ResponseBody
     public TeacherDTO teacher_login(@RequestBody LoginDTO ldto){
         TeacherDTO tdto = new TeacherDTO();
-
         tdto.setTeachid((long) -1);
-
-
         Optional<Teacher> topt = teachers.findTeacherByTeachid(ldto.getCommon_id());
-
-
-
         if(topt.isPresent()){
             Teacher s = topt.get();;
-
             if(topt.get().getPassword().equals(ldto.getPassword())){
-
                 tdto = new TeacherDTO(s);
             }
         }
         return tdto;
     }
-
-
 }

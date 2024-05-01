@@ -26,9 +26,6 @@ public class EmailSender implements Runnable {
     @Override
     public void run(){
 
-
-
-
         try{
             sendMail();
         }
@@ -109,9 +106,6 @@ public class EmailSender implements Runnable {
                     adrs);
             msg.setSubject(sub);
             msg.setText(message);
-
-
-
 
 
             msg.setSentDate(new Date());

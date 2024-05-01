@@ -29,12 +29,6 @@ public class File {
 
     @Lob
     private byte[] data;
-
-
-
-
-
-
     public File(String filename, String filetype, byte[] data) {
         Date det = new Date();
 

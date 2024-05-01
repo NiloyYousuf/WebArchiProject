@@ -89,17 +89,12 @@ public class PreClassroomController {
         clas.save(temp_cls);
 
 
-
         String text = "You have been registered to " + temp_cls.getCoursename() +".";
         List<String> mail_students = new ArrayList<>();
-
         mail_students.add(temp_student.get().getEmail());
-
         EmailSender es = new EmailSender(mail_students , text , "Course Registration" );
         Thread thread = new Thread(es);
         thread.start();
-
-
         return "Paisi";
     }
 }

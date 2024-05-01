@@ -5,7 +5,6 @@ import com.example.classroom.assignment.Assignment;
 import com.example.classroom.assignment.AssignmentDTO;
 import com.example.classroom.assignment.AssignmentRepository;
 import com.example.classroom.attendance.Attendance;
-import com.example.classroom.attendance.AttendanceID;
 import com.example.classroom.attendance.AttendanceRepository;
 import com.example.classroom.classroom.Classroom;
 import com.example.classroom.classroom.ClassroomRepository;
