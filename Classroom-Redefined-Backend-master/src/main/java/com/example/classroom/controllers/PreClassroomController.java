@@ -38,8 +38,9 @@ public class PreClassroomController {
 //                clas.save(copt.get());
 //            }
             cdto = new ClassroomDTO(copt.get());
-        }
+        }System.out.println("This is called");
         return cdto;
+
     }
 
     @GetMapping("/student/{id}")

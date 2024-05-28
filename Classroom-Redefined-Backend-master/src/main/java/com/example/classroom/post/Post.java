@@ -21,16 +21,12 @@ public class Post {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-
     private String text;
     private Timestamp time ;
-
     private String posted_by;
-
 
     @ElementCollection
     private List<String> link = new ArrayList<String>();
-
 
     @ManyToOne
     @JoinColumn(nullable = false)

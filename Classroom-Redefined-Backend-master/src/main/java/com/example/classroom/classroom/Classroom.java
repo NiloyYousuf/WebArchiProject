@@ -53,8 +53,4 @@ public class Classroom implements Serializable {
     @OneToMany(mappedBy = "classroom")
     private List<Assignment> assignmentsHere;
 
-
-
-
-
 }
