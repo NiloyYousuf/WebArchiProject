@@ -25,10 +25,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.persistence.Id;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 @RestController
 @RequestMapping("/classroom")
@@ -98,6 +97,29 @@ public class ClassroomController {
         return "OK";
 
     }
+
+
+    @GetMapping("/attendance/{classroomId}/{dateStr}")
+    @ResponseBody
+    public List<Attendance> getAttendanceByClassroomIdAndDate(
+            @PathVariable Long classroomId,
+            @PathVariable String dateStr) {
+        try {
+            // Convert the date string to a java.util.Date object
+            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+            Date date = dateFormat.parse(dateStr);
+
+            // Retrieve attendance records for the specified classroom and date
+            return presents.findByClassroomidAndDate(classroomId, date);
+        } catch (ParseException e) {
+            // Handle parsing exception (e.g., invalid date format)
+            e.printStackTrace();
+            // Return an empty list or handle the error as needed
+            return Collections.emptyList();
+        }
+    }
+
+
 
     @GetMapping("/getpost/{id}")
     @ResponseBody
@@ -171,10 +193,8 @@ public class ClassroomController {
     @PostMapping("/createattendance")
     @ResponseBody
     public  String create_att(@RequestBody Attendance adto){
-
         presents.save(adto);
         return "OK";
-
     }
 
 

@@ -55,8 +55,6 @@ public class EmailSender implements Runnable {
 
     public void sendMail() {
             System.out.println(txtEmail);
-
-
             //Setting Properties
             Properties props = System.getProperties();
             propertySetter(props);
@@ -65,7 +63,6 @@ public class EmailSender implements Runnable {
             final String password = "icevbblyfgbygveq";
             if(txtEmail == null) return;
             instaSendMail(username, password, txtEmail, txtsub, txtmsg, props);
-
     }
 
     public void propertySetter(Properties props){
@@ -99,7 +96,6 @@ public class EmailSender implements Runnable {
             for(int i = 0 ; i < toMail.size() ; i++){
                 adrs[i] = new InternetAddress(toMail.get(i) );
             }
-            //adrs[0] = new InternetAddress("samazfar52@gmail.com" );
 
             msg.setFrom(new InternetAddress(usernam));
             msg.setRecipients(Message.RecipientType.BCC,
