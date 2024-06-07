@@ -22,6 +22,7 @@ import com.example.classroom.submission.SubmissionRepository;
 import com.example.classroom.teacher.Teacher;
 import com.example.classroom.teacher.TeacherRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.persistence.Id;
@@ -98,7 +99,17 @@ public class ClassroomController {
 
     }
 
-
+    @DeleteMapping("/deletepost/{id}")
+    @ResponseBody
+    public ResponseEntity<String> deletePost(@PathVariable Long id) {
+        System.out.println(id);
+        if (posts.existsById(id)) {
+            posts.deleteById(id);
+            return ResponseEntity.ok("Post deleted successfully");
+        } else {
+            return ResponseEntity.status(404).body("Post not found");
+        }
+    }
     @GetMapping("/attendance/{classroomId}/{dateStr}")
     @ResponseBody
     public List<Attendance> getAttendanceByClassroomIdAndDate(
